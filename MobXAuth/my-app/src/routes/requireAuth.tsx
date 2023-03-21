@@ -3,7 +3,6 @@ import {observer} from "mobx-react-lite";
 import { useContext } from 'react';
 import { storeContext } from '../context/storeContext';
 import GetCookie from '../hooks/getCookie';
-import Cookies from 'uni';
 const RequireAuth: React.FC = () => {
     const { authStore } = useContext( storeContext);
     const auth = authStore.isAuth();
