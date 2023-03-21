@@ -10,7 +10,7 @@ const RequireAuth: React.FC = () => {
 
 
     return (
-        GetCookie('user') != '' ? ( <Outlet />  ) 
+        GetCookie('user') !== '' ? ( <Outlet />  ) 
         : 
         ( <Navigate to="/login" /> )
         );
