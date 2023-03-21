@@ -1,4 +1,4 @@
-import Cookies from 'js-cookie';
+import SetCookie from "../hooks/setCookie";
 export interface loginRequest {
     username: string;
     password: string;
@@ -7,7 +7,7 @@ export interface loginRequest {
 export class AuthApi {
     async login(loginRequest: loginRequest) {
         if(loginRequest.username === "admin" && loginRequest.password === "admin"){
-            Cookies.set('isAuthenticated', 'true');
+            SetCookie('user', JSON.stringify(loginRequest))
             return loginRequest
         }
     /* код для отправки запроса на сервер

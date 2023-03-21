@@ -25,10 +25,8 @@ const HomeView: React.FC = () => {
       homestore.datas.map((item,  key) => {
         <h1>{item.Key}</h1>  
         return ( 
-<>          
-
-<h1>{item.Key}</h1>  
-    
+                <>          
+                <h1>{item.Key}</h1>     
                  {convertJson(item.Value)}
                  </>
         )
