@@ -3,7 +3,6 @@ export interface loginRequest {
     username: string;
     password: string;
 }
-
 export class AuthApi {
     async login(loginRequest: loginRequest) {
         if(loginRequest.username === "admin" && loginRequest.password === "admin"){

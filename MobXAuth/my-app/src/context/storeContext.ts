@@ -7,5 +7,4 @@ interface IStoreContext {
 }
 const authApi = new AuthApi();
 const authStore = new AuthStore(authApi);
-
 export const storeContext = createContext<IStoreContext>({  authStore });
